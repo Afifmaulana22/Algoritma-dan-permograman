@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Sep 26 17:50:54 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas: menghitung luas segi panjang
+#tanggal: 26 september 2021
+"""
+
+print("Konversi Satuan Panjang")
+which = int(input("masukan panjang: "))
+luas = int(input("masukan lebar: "))
+satuan = input("meter/inchi: ")
+
+if satuan =="meter" :
+    conv_luas = (which * luas)
+    print("luas ruangan dengan panjang",which,"dan lebar",luas,"adalah",conv_luas,satuan)
+    
+elif satuan == "inchi" :
+    conv_luas = (luas * which)
+    print("luas ruangan dengan panjang",which,"dan lebar",luas,"adalah",conv_luas,satuan)
