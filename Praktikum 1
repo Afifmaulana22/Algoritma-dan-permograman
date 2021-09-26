@@ -1,0 +1,14 @@
+print('Hai')
+print('salam kenal')
+
+print('Nama saya afif maulana')
+print('panggil afif atau rafif')
+print('asal dari jakarta selatan')
+
+
+x = input("masukan namamu: ")
+print("hai"),print(x)
+x = input("asal kamu darimana: ")
+print("oh ternyata di" + x)
+x = input("asal sekolah darimana")
+print("jakarta selatan" + x)
