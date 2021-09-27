@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Sep 27 13:44:18 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas: menerima 2 bilangan
+#tanggal: 27 september 2021
+"""
+
+
+import math
+
+angka1 = float(input("nilai a = "))
+angka2 = float(input("nilai b = "))
+
+hasil1 = angka1 + angka2
+print("jumlah a di tambah dengan b adalah", hasil1)
+
+hasil2 = abs(angka2-angka1)
+print("selisih antara a dan b adalah", hasil2)
+
+hasil3 = angka1 * angka2
+print("hasil kali a dan b adalah", hasil3)
+
+hasil4 = angka1 % angka2
+print("jymlah pembagian a dengan b adalah", hasil4)
+
+hasil5 = angka1 / angka2
+print("pembagian a dan b adalah", hasil5)
+
+hasil6 = math.log10(angka1)
+print("hasil log(a) adalah", hasil6)
+
+hasil7 = angka1 ** angka2
+print("pangkat A dan pangkat b adalah", hasil7)
