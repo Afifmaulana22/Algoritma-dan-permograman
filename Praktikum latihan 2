@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Oct  2 23:29:17 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas: menerima 2 bilangan
+#tanggal: 27 september 2021
+"""
+
+import  math
+
+
+lat1 = float(input("input lattitude cordinate 1: "))
+lat1 = float(input("input longitude cordinate 1: "))
+lat2 = float(input("input lattitude cordinate 2: "))
+lat2 = float(input("input longitude cordinate 2: "))
+
+latt = lat1 - lat2
+lott = lat1 - lat2
+
+a = math.sin(latt/2)**2 + math.cos(lat1) * math.cos(lat2) + math.sin(lott/2)**2
+c = 2 * math.atan(math.sqrt(a))
+r = 6371.0113*a
+
+D = r * c
+
+print( r, "kilometer")
