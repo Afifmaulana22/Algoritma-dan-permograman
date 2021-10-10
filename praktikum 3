@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 10 20:39:44 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas: menentukan persamaan kuadrat dan determinan
+#tanggal: 10 oktober 2021
+"""
+
+import math
+
+option1 = int(input("1 value: "))
+option2 = int(input("2 value: "))
+option3 = int(input("3 value: "))
+
+
+if option1 == 0:
+    print("not a quadratic equation")
+    
+else:
+    formula = float(option2**2) - (4*option1*option3)
+    
+    if formula > 0 :
+        x1 = (-option2 + math.sqrt(formula)) / (2*option1)
+        x2 = (-option2 - math.sqrt(formula)) / (2*option1)
+        print("different types of roots")
+        print("quadratic equation is",x1,"and",x2)
+        print("determination",formula,)
+        
+        
+    elif formula == 0 :
+        x1 = (-option2 )/ (2*option1)
+        x2 = (-option2 )/ (2*option1)
+        print("twin root type")
+        print("quadratic equation is",x1,"and",x2)
+        print("determintion",formula,)
+        
+    elif formula < 0 :
+        print("imaginary root type")
+        print(f"root x1 = -{option2} + root {formula} / {option2} * {option1}")
+        print(f"root x2 = -{option2} - root {formula} / {option2} * {option1}")
