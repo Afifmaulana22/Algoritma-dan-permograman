@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 11 13:48:42 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: menghitung rata rata
+#tanggal: 11 oktober 2021
+"""
+
+print("welcome")
+
+n = int(input ("enter number: "))
+
+for i in range(n):
+    for j in range(1, n+1):
+        print(n, end='')
+        
+    print()
+    n-=1
