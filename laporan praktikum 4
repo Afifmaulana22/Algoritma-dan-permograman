@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 17 17:55:15 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: pengulangan
+#tanggal: 17 oktober 2021
+"""
+
+count = 0
+answer = "yes"
+
+
+while(answer == "yes"):
+    inputmonth = int(input("month: "))
+    inputyears = int(input("years: "))
+    answer = str(input("continue or not: "))
+
+
+    if(inputmonth >= 13 or inputmonth <= 0):
+        print("month not listed")
+
+    elif(inputmonth == 1 or inputmonth == 3 or inputmonth == 5 or inputmonth == 7 or inputmonth == 8 or inputmonth == 10 or inputmonth == 12):
+        print("this includes 31 days")
+
+    elif(inputmonth == 2):
+
+        if(inputyears % 4 == 0 and inputmonth == 2):
+          print("its 29 days")
+
+        else:
+            print("this includes 28 days")
+
+    else:
+        print("this includes 30 days")
