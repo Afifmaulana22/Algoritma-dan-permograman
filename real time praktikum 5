@@ -1,0 +1,51 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Oct 18 14:23:38 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: real time 5
+#tanggal: 18 oktober 2021
+"""
+
+skor = 0
+nilaisiswa = list()
+
+ulang = 0
+nomor = 0
+while ulang == 0:
+    nomor += 1
+    nilai = str(input("masukan nilai : ")) 
+    if nilai == 'selesai': 
+        ulang = 1
+        break
+    else: 
+        if nilai == 'A': 
+            skor = float(4.00)
+        elif nilai == 'A-':
+            skor = float(3.75)
+        elif nilai == 'B+':
+            skor = float(3.50)
+        elif nilai == 'B':
+            skor = float(3.00)
+        elif nilai == 'B-':
+            skor = float(2.75)
+        elif nilai == 'C+':
+            skor = float(2.50)
+        elif nilai == 'C':
+            skor = float(2.00)
+        elif nilai == 'C-':
+            skor = float(1.75)
+        elif nilai == 'D':
+            skor = float(1.50)
+        elif nilai == 'E':
+            skor = float(1.25)
+        else:
+            print('nilai tidak benar')
+            skor = 0
+            
+        print(('\nNilai ke-{0} = {1}').format(nomor,skor))
+        nilaisiswa.append(skor)
+
+rata2 = sum(nilaisiswa) / len(nilaisiswa)
+print("rata rata nilai murid adalah :", rata2)
