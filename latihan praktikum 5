@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Oct 24 21:56:37 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: laporan latihan 5
+#tanggal: 24 oktober 2021
+"""
+
+repeat = 0
+number = 0
+total= 0
+
+
+while repeat == 0:
+    number += 1
+    x = int(input("enter age: "))
+
+    if x == int("-1"): 
+        break
+
+    else: 
+
+        if x == 1: 
+            total += 0
+            print("its free")
+            print("total",total)
+
+        elif x <= 12:
+            total += 14.00
+            print("$ 14.00")
+            print("total",total)
+
+
+        elif(x >= 13 and x <= 34) :
+            total += 18.00 
+            print("$ 18.00")
+            print("total: ",total)
+
+        elif(x >= 35 and x <= 66) :
+            total += 23.00
+            print("$ 23.00")
+            print("total: ",total)
+
+        else :
+            print("can't understand")
+            total = 0 
+
+
+
+money = int(input("enter money: "))
+
+if money == total:
+            print("your money is enough")
+
+elif money < total:
+            print("your money is less")
+
+elif money > total:
+            money -= total
+            print("return",money)
