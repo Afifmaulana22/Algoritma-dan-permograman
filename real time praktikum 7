@@ -1,0 +1,46 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov  1 13:43:39 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: real time praktikum 7
+#tanggal: 1 november 2021
+"""
+def nilai_keseluruhan ():
+    skor = 0
+    ulang = 1
+    nomor = 0
+    while ulang == 1:
+        nomor += 1
+        x = str(input('masukan Nilai : '))
+        if x == '':
+            nomor -= 1
+            ulang = 0
+            break
+        else: 
+            if x == 'A':
+                skor += float(4.00)
+            elif x == 'A-':
+                skor += float(3.75)
+            elif x == 'B+':
+                skor += float(3.50)
+            elif x == 'B':
+                skor += float(3.00)
+            elif x == 'B-':
+                skor += float(2.75)
+            elif x == 'C+':
+                skor += float(2.50)
+            elif x == 'C':
+                skor += float(2.00)
+            elif x == 'C-':
+                skor += float(1.75)
+            else:
+                 print('nilai tidak benar')
+                 nomor -= 1
+                 print('\nNilai ke-{0} = {1}')
+    rata2 = skor / nomor
+    return rata2
+
+print("rata rata nilai adalah", nilai_keseluruhan())
