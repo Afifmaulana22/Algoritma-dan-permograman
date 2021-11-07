@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov  7 21:08:03 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: laporan praktikum 7
+#tanggal: 7 november 2021
+"""
+
+count = 0
+answer = "yes"
+
+
+while(answer == "yes"):
+    entermonth = int(input("enter month: "))
+    enteryears = int(input("enter year: "))
+    answer = str(input("continue or not: "))
+    
+    
+    
+
+    def hitung_bulan():
+
+      if(entermonth >= 13 or entermonth <= 0):
+          print("month not listed in calender")
+
+      elif(entermonth == 1 or entermonth == 3 or entermonth == 5 or entermonth == 7 or entermonth == 8 or entermonth == 10 or entermonth == 12):
+             print("includes 31 days")
+
+
+
+      elif (entermonth == 2):
+
+        if(enteryears % 4 == 0 and entermonth == 2):
+          print("it's 29 days")
+          return
+
+        else :
+            print("its 28 days ")
+
+      else:
+          print("its 30 days")
+
+
+    hitung_bulan()
