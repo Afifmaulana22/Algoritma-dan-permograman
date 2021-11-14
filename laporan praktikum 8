@@ -1,0 +1,35 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Nov 14 23:01:16 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: praktikum 8
+#tanggal: 14 november november 2021
+"""
+
+angka = ''
+def ordinalnumber(x):
+    while angka != 0:
+        if(angka==1):
+            return str(angka)+"st"
+        if(angka==2):
+            return str(angka)+"nd"
+        if(angka==3):
+            return str(angka)+"rd"
+        if angka in range(4,21):
+            return str(angka)+"th"
+        if(angka==21):
+            return str(angka)+"st"
+        if(angka==22):
+            return str(angka)+"nd"
+        if(angka==23):
+            return str(angka)+"rd"
+        else:
+            print("eror")
+    else:
+        print("0th")
+        
+angka = int(input("enter number:"))
+print(ordinalnumber(angka))
