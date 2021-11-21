@@ -5,8 +5,8 @@ Created on Sun Nov 21 20:48:31 2021
 
 @author: afifmaulana
 #nim: 065002100024
-#tugas latihan: realtime 9
-#tanggal: 15 november november 2021
+#tugas latihan: latihan praktikum 9
+#tanggal: 21 november 2021
 """
 
 a = int(input("masukan angka: "))
