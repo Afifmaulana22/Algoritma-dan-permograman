@@ -1,0 +1,43 @@
+Created on Fri Nov 26 09:11:06 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: realtime 10
+#tanggal: 26 november 2021
+"""
+
+def write():
+    biodata = open('biodataku.txt', 'w')
+    biodata.write
+    biodata.close
+
+
+nama = str(input("masukan nama mu : "))
+umur = str(input("masukan umur mu : "))
+alamat = str.upper(input("masukan alamat mu : "))
+email = str(input("masukan email mu : "))
+dosen = str(input("masukan dosen walimu : "))
+print("")
+
+def read():
+    file = open('biodataku.txt', 'r')
+    text = file.read()
+    print(text)
+    file.read()
+
+print("Berikut ini data kamu")
+text = str(f'''
+nama: {nama}
+umur: {umur}
+alamat: {alamat}
+email: {email}
+dosen wali: {dosen}
+''')
+
+print(nama)
+print(umur)
+print(alamat)
+print(email)
+print(dosen)
+
+write()
