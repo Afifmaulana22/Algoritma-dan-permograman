@@ -1,0 +1,75 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Nov 29 13:50:03 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: laporan praktikum 10
+#tanggal: 29 november 2021
+"""
+perulangan = 0
+
+while(perulangan == 0 ):
+
+    print("\n===== Program File Handling =====" )
+
+    print("1.Membuat dan Menulis File")
+    print("2.Membaca file")
+    print("3.Menambahkan Text Pada File")
+    print("4.Keluar Dari Program")
+
+    pilihan = int(input("\nmasukan pilihan berupa angka berikut (1/2/3/4): "))
+
+
+
+
+    if pilihan == 1 :
+
+        
+            file = str(input("masukan nama file : "))
+            nama = str(input("masukan namamu : "))
+            nim = int(input("masukan nim kamu : "))
+            angkatan = int(input("masukan angkatanmu : "))
+
+
+            nama_file = open(f'{file}','w')
+            nama_file.write(str(-1))
+            nama_file.close()
+            print("file berhasil dibuat")
+
+    elif pilihan == 2 :
+
+        
+       x = str(input("masukan nama folder : "))
+
+       nama_file = open(f'{file}','r')
+       nama_file.read()
+       nama_file.close()
+
+       print("\nNama mu adalah : ",nama)
+       print("Nim kamu adalah : ",nim)
+       print("Angkatan kamu adalah : ",angkatan)
+
+
+
+    elif pilihan == 3 :
+
+        y = str(input("masukan nama file : "))
+
+        pilihan1 = str(input("masukan nama sahabat mu : "))
+        catatan = str(input("masukan catatan tambahan kamu : "))
+
+        nama_file = open(f'{file}',"a")
+        nama_file.write(str(-1))
+        nama_file.close()
+        
+
+        print("\n catatan berhasil dibuat ")
+
+
+    elif pilihan == 4 :
+
+        
+        print("Terima Kasih sudah Menggunakan Program kami")
+        break
