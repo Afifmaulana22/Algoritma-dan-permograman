@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Dec  6 14:37:56 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: realtime 12
+#tanggal: 6 desember 2021
+"""
+
+class mahasiswa:
+
+   def __init__ (self,nama,angkatan,nim):
+
+        self.nama = nama
+        self.nim = nim
+        self.angkatan = angkatan
+
+   def biodata_mahasiswa(self):
+       print("\nama : ",self.nama)
+       print("nim : ",self.nim)
+       print("angkatan tahn : ",self.angkatan)
+
+nama = str(input("nama mu : "))
+nim = str(input("nim kamu : "))
+angkatan = str(input("angkatan: "))
+
+biodata = mahasiswa(nama,angkatan,nim)
+biodata.biodata_mahasiswa()
