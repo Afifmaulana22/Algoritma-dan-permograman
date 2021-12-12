@@ -1,0 +1,73 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 11 22:22:43 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: laporan praktikum 12
+#tanggal: 11 desember 2021
+"""
+
+class mahasiswa:
+
+    def __init__(self,nilai,nama):
+
+        self.nilai = nilai
+        self.nama = nama
+
+    def ubah(self): 
+
+        print("Nama Kamu Adalah : " + self.nama)
+        print("print nilai kamu adalah : " + str(self.nilai))
+        
+perulangan = 0 
+
+while perulangan == 0 :
+
+    print("==== Program OOP ==== ")
+    print("1.Mendeklarasikan Objek")
+    print("2.Menampilkan Objek")
+    print("3.Merubah nilai Objek")
+    print("4.Menghapus Objek")
+    print("5.Keluar Program")
+
+    pilihan = int(input("Masukan Pilihan kamu (1/2/3/4/5):  "))
+
+    if pilihan == 1 :
+
+        nama = str(input("Masukan Nama Kamu : "))
+        nilai = str(input("Masukan Nilai Kamu : "))
+        biodata = mahasiswa(nilai,nama)
+        print("Data Berhasil Ditambahkan")
+        
+    elif pilihan == 2 :
+
+        biodata = mahasiswa(nilai,nama)
+        biodata.ubah()
+
+    elif pilihan ==3 :
+
+        a ="nama"
+        b ="nilai"
+        perubahan=input("pilih yang ingin di ubah : ")
+
+        if perubahan == "a":
+
+            nama = input("masukan nama yang diubah")
+            print("nama berhasil di ubah")
+
+        elif perubahan == "b":
+
+            nilai = input("input nilai yang ingin diubah")
+            print("nilai berhasil diubah")
+
+    elif pilihan == 4 :
+
+        nama = "none"
+        nilai = "none"
+        print("data berhasil di hapus")
+
+    elif pilihan == 5:
+        print("terima kasih sudah memakai program ini")
+        break
