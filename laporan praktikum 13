@@ -1,0 +1,47 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Dec 22 20:28:07 2021
+
+@author: afifmaulana
+#nim: 065002100024
+#tugas latihan: Laporan Praktikum 13
+#tanggal: 22 desember 2021
+"""
+
+import pandas as pd
+
+def pertama(data):
+
+    file = open("negaraMean.csv","w")
+    file.write(data)
+    file.close()
+
+def kedua(data):
+
+    file = open("NegaraStandarDevisiasi.csv","w")
+    file.write(data)
+    file.close()
+    
+
+data = {"Negara": ['Indonesia', 'Jepang', 'India', 'China', 'Amerika Serikat', 'Brazil', 'Rusia', 'Meksiko', 'Nigeria', 'Jerman', 'Aljazair', 'Inggris'],
+        "Ibu Kota": ['Jakarta', 'Tokyo', 'New Delhi', 'Beijing', 'Washington, D.C.', 'Brazilia', 'Moskow', 'Meksiko City', 'Abuja', 'Berlin', 'Aljazair', 'London'],
+        "Benua": ['Asia', 'Asia', 'Asia', 'Asia', 'Amerika', 'Amerika', 'Asia', 'Amerika', 'Afrika', 'Eropa', 'Afrika', 'Eropa'],
+        "Luas": [1905, 377, 3287, 9597, 9834, 8515, 17098, 1964, 923, 357, 2381, 242],
+        "Populasi": [264, 143, 1252, 1357, 329, 210, 146, 126, 200, 83, 43, 66]}
+        
+        
+df = pd.DataFrame(data)
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+
+
+print("Berikut Data Framenya:\n")
+print(df)
+print("\nBerikut Data Mean:")
+print(mean)
+print("\nBerikut Data Standar Devisiasi")
+print(std)
+pertama(str(mean))
+kedua(str(std))
+print("\nFile Berhasil dibuat")
